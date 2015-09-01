@@ -1,0 +1,457 @@
+@import 'fonts.css';
+@import 'animate.css';
+
+.font-regular {
+    font-family: 'brandon_grotesque_regularRg';
+    font-weight: normal
+}
+
+.font-medium {
+    font-family: 'brandon_grotesquemedium';
+    font-weight: normal
+}
+
+.font-bold {
+    font-family: 'brandon_grotesquebold';
+    font-weight: normal
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'brandon_grotesque_regularRg';
+    font-weight: normal
+}
+
+p {
+    text-align: justify
+}
+
+strong {
+    font-family: 'brandon_grotesquebold';
+    font-weight: normal
+}
+
+a {
+    transition-property: color;
+    transition-duration: .1s;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .1s;
+    color: #ffffff;
+    outline: none
+}
+
+a:hover {
+    color: #ffffff
+}
+
+a:focus {
+    outline: none
+}
+
+h1 {
+    font-family: 'brandon_grotesquemedium';
+    font-weight: normal;
+    font-size: 22px;
+    color: #666
+}
+
+h2 {
+    font-family: 'brandon_grotesquemedium';
+    font-weight: normal;
+    font-size: 21px;
+    color: #666
+}
+
+h3 {
+    font-family: 'brandon_grotesquemedium';
+    font-weight: normal;
+    font-size: 21px;
+    color: #666
+}
+
+h4 {
+    font-family: 'brandon_grotesquebold';
+    font-weight: normal;
+    font-size: 20px;
+    color: #666
+}
+
+h5 {
+    font-family: 'brandon_grotesquebold';
+    font-weight: normal;
+    font-size: 16px;
+    color: #735768;
+    text-transform: uppercase
+}
+
+h6 {
+    font-family: 'brandon_grotesquebold';
+    font-weight: normal;
+    font-size: 14px;
+    color: #555;
+    text-transform: uppercase
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    line-height: 1.5
+}
+
+h1, h2, h3 {
+    margin-top: 40px
+}
+
+h4, h5, h6 {
+    margin-top: 30px
+}
+
+.home-link {
+    font-size: 40px;
+    white-space: nowrap !important;
+    letter-spacing: 6px !important;
+    text-decoration: none !important;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3);
+    color: #fff !important;
+    cursor: pointer !important;
+    background-color: transparent !important;
+    transition-duration: .1s !important;
+    -webkit-transition-property: color !important;
+    -webkit-transition-duration: .1s !important;
+    transition-property: border-color !important;
+    transition-duration: .3s !important;
+    -webkit-transition-property: border-color !important;
+    -webkit-transition-duration: .3s !important;
+    font-family: 'brandon_grotesque_regularRg';
+    font-weight: bold
+}
+/*controls the placement of hte thin transparent line under the navigation links*/
+.navbar-static {
+    font-family: 'brandon_grotesquebold';
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3);
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 1;
+    height: 126px;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    border: 0;
+    background: transparent
+}
+
+.navbar-static .navbar-nav {
+    margin-top: 40px;
+    position: relative;
+    float: none;
+    text-align: center
+}
+
+.navbar-static .navbar-nav li {
+    float: none;
+    display: inline-block;
+    text-align: center
+}
+
+.navbar-static .navbar-nav li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 13px
+}
+
+.navbar-static .navbar-nav li a .line {
+    display: inline-block;
+    padding: 7px 0 5px 0;
+    border-bottom: 2px solid transparent;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3);
+    transition-duration: .1s;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .1s;
+    transition-property: border-color;
+    transition-duration: .3s;
+    -webkit-transition-property: border-color;
+    -webkit-transition-duration: .3s
+}
+
+.navbar-static .navbar-nav li a:hover, .navbar-static .navbar-nav li a:focus {
+    color: #fff
+}
+
+.navbar-static .navbar-nav li li {
+    margin-left: 0;
+    display: block
+}
+
+.navbar-static .navbar-nav li:hover .line {
+    border-bottom: 2px solid #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3)
+}
+
+.navbar-static .navbar-nav li.divider {
+    display: none;
+    visibility: hidden;
+    margin-left: 0
+}
+
+.navbar-static .navbar-nav .active a, .navbar-static .navbar-nav .active a:hover, .navbar-static .navbar-nav .active a:focus {
+    background: transparent;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3);
+    color: #fff
+}
+
+.navbar-static .navbar-nav .active a .line, .navbar-static .navbar-nav .active a:hover .line, .navbar-static .navbar-nav .active a:focus .line {
+    border-bottom: 2px solid #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-static .navbar-nav .open > a, .navbar-static .navbar-nav .open > a:hover, .navbar-static .navbar-nav .open > a:focus {
+    background-color: transparent;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3);
+    color: #fff
+}
+
+.navbar-header {
+    position: relative !important;
+    top: 40px;
+    float: none;
+    text-align: center
+}
+
+
+.navbar-static .dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.navbar-static .dropdown .dropdown-menu li.active a {
+    background: transparent;
+    color: #fff
+}
+
+.navbar-static .dropdown .dropdown-menu li.active a .line {
+    border-bottom: 2px solid #fff
+}
+
+.navbar-static .dropdown.open .dropdown-menu, .navbar-static .dropdown:hover .dropdown-menu, .navbar-static .dropdown:focus .dropdown-menu {
+    text-transform: uppercase;
+    display: block;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'brandon_grotesquebold';
+    font-weight: normal;
+    background: transparent;
+    left: 50%;
+    margin-left: -110px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 15px;
+    border: none !important
+}
+
+.navbar-static .dropdown.open .dropdown-menu a, .navbar-static .dropdown:hover .dropdown-menu a, .navbar-static .dropdown:focus .dropdown-menu a {
+    color: #fff;
+    background: transparent;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.navbar-static .dropdown.open .dropdown-menu a .line, .navbar-static .dropdown:hover .dropdown-menu a .line, .navbar-static .dropdown:focus .dropdown-menu a .line {
+    border-bottom: 2px solid transparent;
+    padding: 2px 0 0 0;
+    transition-duration: .1s;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .1s;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s
+}
+
+.line {
+    background: transparent;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    padding: 2px 0 0 0;
+    transition-duration: .1s;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .1s;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s
+}
+
+.navbar-static .dropdown.open .dropdown-menu a:hover .line, .navbar-static .dropdown:hover .dropdown-menu a:hover .line, .navbar-static .dropdown:focus .dropdown-menu a:hover .line {
+    border-bottom: 2px solid #fff
+}
+
+.navbar-static .navbar-toggle {
+    display: none
+}
+
+
+
+.carousel-dmc {
+    height: 100%;
+    overflow: hidden;
+    background: #000020
+}
+
+.carousel-dmc .item {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.carousel-dmc .item, .carousel-dmc .item.active {
+    height: 100%
+}
+
+.carousel-dmc .carousel-inner {
+    height: 100%
+}
+
+.carousel-dmc .carousel-caption {
+    top: 10%;
+    bottom: auto;
+    left: 0;
+    right: 0
+}
+
+.carousel-dmc .carousel-caption h2 {
+    font-size: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'brandon_grotesque_regularRg';
+    font-weight: normal;
+    letter-spacing: 8px;
+    line-height: 1.5
+}
+
+.carousel-dmc .carousel-caption p {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3);
+    line-height: 1.5;
+    padding-top: 40px;
+    margin-top: 30px;
+    background: url('/img/spacer-50x2-white.png') no-repeat top center;
+    font-family: 'brandon_grotesquemedium';
+    font-weight: normal
+}
+
+.carousel-dmc .carousel-indicators li, .carousel-dmc .carousel-indicators .active {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 4px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 0;
+    border-radius: 4px;
+    opacity: .4;
+    transition-property: all;
+    transition-duration: .2s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .2s
+}
+
+.carousel-dmc .carousel-indicators li.active {
+    opacity: 1
+}
+
+.carousel-indicators li {
+    background-color: #999;
+    background-color: rgba(70, 70, 70, 0.25)
+}
+
+.carousel-indicators .active {
+    background-color: #444
+}
+
+.carousel-overlay .item:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-gradient(radial, center center, 0, center center, 100%, color-stop(0, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0) 100%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0000FF', endColorstr='#00000000', GradientType=1)
+}
+
+.carousel-overlay .item:before {
+    content: ' ';
+    display: block;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.07) 26%, rgba(0, 0, 0, 0.5) 71%, rgba(0, 0, 0, 0.7) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.05) 26%, rgba(0, 0, 0, 0.5) 71%, rgba(0, 0, 0, 0.7) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.07) 26%, rgba(0, 0, 0, 0.5) 71%, rgba(0, 0, 0, 0.7) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.07) 26%, rgba(0, 0, 0, 0.5) 71%, rgba(0, 0, 0, 0.7) 100%);
+    opacity: .1
+}
+
+.item-1 {
+    background: url('/img/bg1.jpg') no-repeat center center
+}
+
+.item-2 {
+    background: url('/img/bg2.jpg') no-repeat center center
+}
+
+.item-3 {
+    background: url('/img/bg3.jpg') no-repeat center center
+}
+
+.item-4 {
+    background: url('/img/bg4.jpg') no-repeat center center
+}
+
+.item-5 {
+    background: url('/img/bg5.jpg') no-repeat center center
+}
+
+.item-6 {
+    background: url('/img/bg6.png') no-repeat center center
+}
+
+.item-7 {
+    background: url('/img/bg7.jpg') no-repeat center center
+}
+
+.item-8 {
+    background: url('/img/bg8.jpg') no-repeat center center
+}
+
+.item-9 {
+    background: url('/img/bg9.jpg') no-repeat center center
+}
+
+.item-10 {
+    background: url('/img/bg10.jpg') no-repeat center center
+}
+
+.main-content {
+    background: #fff
+}
+
+.navbar-static .navbar-nav li {
+    min-width: 15%
+}
